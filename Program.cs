@@ -1,9 +1,22 @@
+using OrderSystem.Services;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddScoped<ITimeService, TimeService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+app.Use(async (context, next) =>
+{
+    await next();
+    
+    Console.WriteLine(
+        $"{context.Request.Method} {context.Request.Path} " +
+        $"-> {context.Response.StatusCode}");
+});
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
