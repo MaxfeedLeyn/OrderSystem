@@ -95,3 +95,4 @@
 /home/maxfeedleyn/RiderProjects/OrderSystem/OrderSystem/obj/Debug/net10.0/OrderSystem.pdb
 /home/maxfeedleyn/RiderProjects/OrderSystem/OrderSystem/obj/Debug/net10.0/OrderSystem.genruntimeconfig.cache
 /home/maxfeedleyn/RiderProjects/OrderSystem/OrderSystem/obj/Debug/net10.0/ref/OrderSystem.dll
+/home/maxfeedleyn/RiderProjects/OrderSystem/OrderSystem/obj/Debug/net10.0/OrderSystem.sourcelink.json
